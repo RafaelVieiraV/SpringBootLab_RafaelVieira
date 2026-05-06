@@ -1,16 +1,15 @@
-name: CI - Build and Test
+name: Java CI with Gradle
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -18,23 +17,15 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
           java-version: '17'
+          distribution: 'temurin'
 
-      - name: Debug - List files # Esto nos dirá en la consola dónde están los archivos
-        run: ls -R
-
-      - name: Grant execute permission
-        # Este comando busca gradlew y le da permisos sin importar la carpeta
-        run: find . -name "gradlew" -exec chmod +x {} +
+      # Esta acción oficial configura Gradle y arregla los permisos de gradlew por ti
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
 
       - name: Build with Gradle
-        # Ejecutamos el build buscando el gradlew dinámicamente
-        run: |
-          GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
-          $GRADLEW_PATH clean build
+        run: ./gradlew build
 
       - name: Run Tests
-        run: |
-          GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
-          $GRADLEW_PATH test
+        run: ./gradlew test
