@@ -6,35 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f52eb20c-5a29-459a-b8cd-e3d4f494a1d6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/SpringLab.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SpringLab.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/SpringLabApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/domain/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/dto/StudentCreateRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/dto/StudentResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/dto/StudentUpdateDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/interceptor/RequestLoggingInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/repository/StudentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/service/StudentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/service/impl/StudentServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/web/advice/ConflictException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/web/advice/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/web/advice/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/web/controller/StudentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/test/java/com/example/springlab/SpringLabApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/test/java/com/repository/StudentRepositoryTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1776458052997</updated>
-      <workItem from="1778102729005" duration="405000" />
+      <workItem from="1778102729005" duration="642000" />
     </task>
     <servers />
   </component>

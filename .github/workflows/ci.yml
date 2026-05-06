@@ -11,11 +11,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # --- ESTA ES LA LÍNEA QUE DEBES AGREGAR ---
-    defaults:
-      run:
-        working-directory: SpringLab
-    # ------------------------------------------
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,7 +22,7 @@ jobs:
           java-version: '17'
 
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x gradlew # Ahora sí lo encontrará en la raíz
 
       - name: Build with Gradle
         run: ./gradlew clean build
