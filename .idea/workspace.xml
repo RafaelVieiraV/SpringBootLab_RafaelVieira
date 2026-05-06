@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26d65331-237c-44f8-812c-20dc022fbb8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SpringLab/src/test/java/com/repository/StudentRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/SpringLab/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringLab/src/test/java/com/example/springlab/SpringLabApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/SpringLab/src/test/java/com/example/springlab/SpringLabApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="26d65331-237c-44f8-812c-20dc022fbb8c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +101,7 @@
       <workItem from="1778094949570" duration="1800000" />
       <workItem from="1778099725119" duration="241000" />
       <workItem from="1778099993079" duration="37000" />
-      <workItem from="1778100038746" duration="1906000" />
+      <workItem from="1778100038746" duration="2207000" />
     </task>
     <servers />
   </component>
