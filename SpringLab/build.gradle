@@ -7,7 +7,6 @@ plugins {
 group = 'ec.edu.espe'
 version = '0.0.1-SNAPSHOT'
 
-// Cambiamos 'toolchain' por 'sourceCompatibility' para evitar el error de JvmVendorSpec
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
@@ -18,21 +17,25 @@ repositories {
 }
 
 dependencies {
-    // Web y Validación (Indispensables para tu GlobalExceptionHandler)
+    // --- LÓGICA DE NEGOCIO Y WEB ---
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
-    // Persistencia y Base de Datos
+    // --- PERSISTENCIA Y BASES DE DATOS ---
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    runtimeOnly 'com.mysql:mysql-connector-j'
+    runtimeOnly 'com.mysql:mysql-connector-j' // Para tu MySQL local
+    runtimeOnly 'com.h2database:h2' // Para que la app pueda usar H2 en desarrollo
 
-    // Lombok (Asegúrate de tener el plugin de Lombok instalado en IntelliJ)
+    // --- HERRAMIENTAS DE DESARROLLO ---
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // --- PRUEBAS (TESTING) ---
+    // Este starter ya incluye Mockito, AssertJ y soporte para JPA/Web tests
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'com.h2database:h2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 tasks.named('test') {
