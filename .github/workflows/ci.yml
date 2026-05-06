@@ -21,11 +21,20 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew # Ahora sí lo encontrará en la raíz
+      - name: Debug - List files # Esto nos dirá en la consola dónde están los archivos
+        run: ls -R
+
+      - name: Grant execute permission
+        # Este comando busca gradlew y le da permisos sin importar la carpeta
+        run: find . -name "gradlew" -exec chmod +x {} +
 
       - name: Build with Gradle
-        run: ./gradlew clean build
+        # Ejecutamos el build buscando el gradlew dinámicamente
+        run: |
+          GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
+          $GRADLEW_PATH clean build
 
       - name: Run Tests
-        run: ./gradlew test
+        run: |
+          GRADLEW_PATH=$(find . -name "gradlew" | head -n 1)
+          $GRADLEW_PATH test
