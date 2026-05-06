@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   pull_request:
     branches:
       - main
@@ -12,6 +11,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # --- ESTA ES LA LÍNEA QUE DEBES AGREGAR ---
+    defaults:
+      run:
+        working-directory: SpringLab
+    # ------------------------------------------
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

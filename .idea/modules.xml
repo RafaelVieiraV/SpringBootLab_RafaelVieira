@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/SpringLab.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SpringLab.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ec.edu.espe.SpringLab.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ec.edu.espe.SpringLab.main.iml" />
     </modules>
   </component>
 </project>

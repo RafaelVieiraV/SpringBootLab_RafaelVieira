@@ -4,14 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26d65331-237c-44f8-812c-20dc022fbb8c" name="Changes" comment="" />
+    <list default="true" id="f52eb20c-5a29-459a-b8cd-e3d4f494a1d6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/SpringLab.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SpringLab.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/SpringLabApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/domain/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/dto/StudentCreateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/dto/StudentResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/dto/StudentUpdateDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/interceptor/RequestLoggingInterceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/repository/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/service/impl/StudentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/web/advice/ConflictException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/web/advice/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/web/advice/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/java/com/web/controller/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/test/java/com/example/springlab/SpringLabApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringLab/src/test/java/com/repository/StudentRepositoryTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$/SpringLab">
+    <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
@@ -35,6 +66,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Exception" />
         <option value="Class" />
       </list>
     </option>
@@ -43,48 +76,44 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1,
+  &quot;associatedIndex&quot;: 0,
   &quot;fromUser&quot;: false
 }</component>
-  <component name="ProjectId" id="3DMbaN3bfcpfHr2c9GcYzEGZfzp" />
+  <component name="ProjectId" id="3CV5kQ1dIkWqFhiVGMBWCgSa1PI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/Desktop/SpringLab&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build SpringLab.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.SpringLabApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\SpringLab\src\main\java\com\service\impl" />
+      <recent name="C:\Users\LENOVO\IdeaProjects\SpringLab\src\main\java\com" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.repository" />
+      <recent name="com.service" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="SpringLab" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SpringLab" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
     <configuration name="SpringLabApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="SpringLab.main" />
+      <module name="ec.edu.espe.SpringLab.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.SpringLabApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,19 +122,26 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="26d65331-237c-44f8-812c-20dc022fbb8c" name="Changes" comment="" />
-      <created>1778094948336</created>
+      <changelist id="f52eb20c-5a29-459a-b8cd-e3d4f494a1d6" name="Changes" comment="" />
+      <created>1776458052997</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1778094948336</updated>
-      <workItem from="1778094949570" duration="1800000" />
-      <workItem from="1778099725119" duration="241000" />
-      <workItem from="1778099993079" duration="37000" />
-      <workItem from="1778100038746" duration="2207000" />
+      <updated>1776458052997</updated>
+      <workItem from="1778102729005" duration="405000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
 </project>
