@@ -1,30 +1,23 @@
 spring:
     datasource:
         url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=MySQL
-        driver-class-name: org.h2.Driver
-        username: sa
-        password: '1234'
+        # ... (resto de tu config de base de datos)
 
     jpa:
-        # IMPORTANTE: Espera a que Hibernate cree las tablas antes de insertar los datos
         defer-datasource-initialization: true
         hibernate:
-            # create-drop es ideal para laboratorios; limpia y recrea la BD en cada reinicio
             ddl-auto: create-drop
-        properties:
-            hibernate:
-                dialect: org.hibernate.dialect.H2Dialect
+        # ...
 
     sql:
         init:
-            # CAMBIADO de 'never' a 'always' para que lea tu archivo import.sql
             mode: always
 
 logging:
     level:
         root: warn
-        # Opcional: verás en los logs cuando se inserten los datos
         org.springframework.jdbc.datasource.init: debug
 
-    app:
-        version: ${APP_VERSION:1.0.0-snapshot}
+# ESTO DEBE ESTAR AL RAS DEL MARGEN (Nivel raíz)
+app:
+    version: ${APP_VERSION:1.0.0-snapshot}
