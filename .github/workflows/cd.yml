@@ -1,0 +1,17 @@
+name: CD - Continuous Deployment
+
+on:
+  workflow_run:
+    workflows: ["Java CI with Gradle"] # Asegúrate de que este nombre coincida con el "name" de tu ci.yml
+    types: [completed]
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Esta condición asegura que el despliegue SOLO ocurra si el CI terminó con éxito ✅
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Deploy to Render
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
