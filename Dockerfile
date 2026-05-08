@@ -7,9 +7,8 @@ RUN gradle build --no-daemon -x test
 # Etapa 2: Run (Ejecución)
 FROM eclipse-temurin:17-jre-jammy
 
-# 1. Definimos un argumento para recibir el GITHUB_SHA
-ARG VERSION=development
-# 2. Lo convertimos en una variable de entorno para que Spring la lea
+
+ARG VERSION=1.0.0-snapshot
 ENV APP_VERSION=${VERSION}
 
 EXPOSE 8080
