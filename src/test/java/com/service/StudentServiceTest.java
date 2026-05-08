@@ -26,7 +26,7 @@ public class StudentServiceTest {
 
     @Test
     void shouldNotAllowDuplicatedEmail() {
-        // 1. Guardamos un estudiante previo
+        // 1. Guardamos el primer estudiante
         Student existing = new Student();
         existing.setFullName("Existing User");
         existing.setEmail("duplicated@example.com");
@@ -34,13 +34,13 @@ public class StudentServiceTest {
         existing.setActive(true);
         studentRepository.save(existing);
 
-        // 2. CAMBIO PARA FALLAR: Usamos un email que NO es duplicado
+        // 2. Intentamos crear otro con el MISMO email para que falle la lógica
         StudentCreateRequest request = new StudentCreateRequest();
         request.setFullName("New User");
-        request.setEmail("este-email-no-es-duplicado@example.com"); // <--- Esto rompe el test
+        request.setEmail("duplicated@example.com"); // Email duplicado
         request.setBirthDate(LocalDate.of(2001, 12, 1));
 
-        // 3. El test fallará aquí porque espera una ConflictException que NO va a ocurrir
+        // 3. El test PASA si el sistema lanza la ConflictException
         assertThatThrownBy(() -> studentService.create(request))
                 .isInstanceOf(ConflictException.class);
     }
