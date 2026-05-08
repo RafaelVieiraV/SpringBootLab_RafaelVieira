@@ -27,4 +27,4 @@ logging:
         org.springframework.jdbc.datasource.init: debug
 
     app:
-        version: ${GITHUB_SHA:development}
+        version: ${APP_VERSION:development}
