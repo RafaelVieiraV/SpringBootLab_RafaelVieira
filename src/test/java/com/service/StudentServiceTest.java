@@ -12,35 +12,35 @@ import org.springframework.context.annotation.Import;
 
 import java.time.LocalDate;
 
-import static org.assertj.core.api.Assertions.assertThatThrownBy; // Importante para que funcione el test
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @DataJpaTest
 @Import({StudentServiceImpl.class})
 public class StudentServiceTest {
 
     @Autowired
-    private StudentServiceImpl studentService; // Asegúrate de usar la implementación
+    private StudentServiceImpl studentService;
 
     @Autowired
     private StudentRepository studentRepository;
 
     @Test
     void shouldNotAllowDuplicatedEmail() {
-        // 1. Guardamos un estudiante previo con el email que queremos duplicar
+        // 1. Guardamos un estudiante previo
         Student existing = new Student();
         existing.setFullName("Existing User");
         existing.setEmail("duplicated@example.com");
         existing.setBirthDate(LocalDate.of(2001, 12, 1));
         existing.setActive(true);
-        studentRepository.save(existing); // Usamos el nombre correcto del repositorio
+        studentRepository.save(existing);
 
-        // 2. Preparamos la solicitud para crear uno nuevo con el mismo email
+        // 2. CAMBIO PARA FALLAR: Usamos un email que NO es duplicado
         StudentCreateRequest request = new StudentCreateRequest();
         request.setFullName("New User");
-        request.setEmail("duplicated@example.com");
+        request.setEmail("este-email-no-es-duplicado@example.com"); // <--- Esto rompe el test
         request.setBirthDate(LocalDate.of(2001, 12, 1));
 
-        // 3. Verificamos que al intentar guardarlo, lance la ConflictException
+        // 3. El test fallará aquí porque espera una ConflictException que NO va a ocurrir
         assertThatThrownBy(() -> studentService.create(request))
                 .isInstanceOf(ConflictException.class);
     }

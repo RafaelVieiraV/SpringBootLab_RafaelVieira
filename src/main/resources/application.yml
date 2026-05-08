@@ -25,3 +25,6 @@ logging:
         root: warn
         # Opcional: verás en los logs cuando se inserten los datos
         org.springframework.jdbc.datasource.init: debug
+
+    app:
+        version: ${GITHUB_SHA:development}
