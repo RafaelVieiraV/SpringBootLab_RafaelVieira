@@ -3,19 +3,25 @@ spring:
         url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=MySQL
         driver-class-name: org.h2.Driver
         username: sa
-        password: '1234' # Es buena práctica ponerlo entre comillas si son solo números
+        password: '1234'
 
-    jpa: # Al mismo nivel que datasource
+    jpa:
+        # IMPORTANTE: Espera a que Hibernate cree las tablas antes de insertar los datos
+        defer-datasource-initialization: true
         hibernate:
-            ddl-auto: update
+            # create-drop es ideal para laboratorios; limpia y recrea la BD en cada reinicio
+            ddl-auto: create-drop
         properties:
             hibernate:
                 dialect: org.hibernate.dialect.H2Dialect
 
-    sql: # Al mismo nivel que datasource
+    sql:
         init:
-            mode: never
+            # CAMBIADO de 'never' a 'always' para que lea tu archivo import.sql
+            mode: always
 
-logging: # Al mismo nivel que 'spring'
+logging:
     level:
         root: warn
+        # Opcional: verás en los logs cuando se inserten los datos
+        org.springframework.jdbc.datasource.init: debug
