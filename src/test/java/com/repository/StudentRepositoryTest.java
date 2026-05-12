@@ -27,9 +27,9 @@ public class StudentRepositoryTest {
         studentRepository.save(student);
 
         // Verificación
-        var result = studentRepository.findByEmail("test@example.com"); // Faltaba el ;
+        var result = studentRepository.findByEmail("test@example.com");
         assertThat(result).isPresent();
-        assertThat(result.get().getFullName()).isEqualTo("Test User"); // Faltaba el ;
+        assertThat(result.get().getFullName()).isEqualTo("Test User");
 
     }
 }

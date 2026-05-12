@@ -5,6 +5,7 @@ public class StudentResponse {
     private Long id;
     private String fullName; // Cambiado de 'name' a 'fullName' para ser consistentes
     private String email;
+    private Boolean active; // Campo agregado para reflejar el estado activo/inactivo
 
     // Constructor vacío
     public StudentResponse() {}
@@ -33,4 +34,13 @@ public class StudentResponse {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public Boolean getActive() {
+        return active;
+    }
+
+    public void setActive(Boolean active) {
+        this.active = active;
+    }
+
 }

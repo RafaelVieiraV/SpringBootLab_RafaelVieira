@@ -66,11 +66,13 @@ public class StudentServiceImpl implements StudentService {
         return toResponse(repository.save(s));
     }
 
+    // Método privado para mapear entidad Student a DTO StudentResponse
     private StudentResponse toResponse(Student s) {
         StudentResponse r = new StudentResponse();
         r.setId(s.getId());
         r.setFullName(s.getFullName());
         r.setEmail(s.getEmail());
+        r.setActive(s.getActive()); // Incluye el estado activo/inactivo del estudiante
         return r;
     }
 }
